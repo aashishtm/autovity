@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="/images/icon.png" type="image/icon type"> 
     <title>Autovity</title>
   </head>
-  <body class="container">
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand"><img src="/images/logo.png" alt="Logo" class="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,21 +34,21 @@
             <a class="nav-link" href="#">Our Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">About</a>
+            <a class="nav-link " href="#">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
         </ul>
         <div class="ml-auto">
-          <i class="fa fa-facebook"></i> | <i class="fa fa-instagram"></i> | <i class="fa fa-twitter"></i>
+          <i class="fab fa-facebook"></i> | <i class="fab fa-instagram"></i> | <i class="fab fa-twitter"></i>
         </div>
       </div>
     </nav>
     <!-- Navbar end -->
     
     <!-- Jumborton -->
-    <section class="row jumborton">
+    <section class="row jumborton mb-3">
       <div class="col-sm-6"><img src="/images/jum-bg.svg" alt="" class="img-fluid">
       </div>
       <div class="col-sm-6 text-left my-auto">
@@ -61,8 +61,8 @@
       </div>
     </section>
     <!-- Jumborton end -->
-    
-    <!-- Autovity Define -->
+    <section id="maincontent" class="container">
+       <!-- Autovity Define -->
     <section class="container-fluid row mt-3 bg-fadewhite shadow">
       <div class="col my-auto">
         <h3 class="pt-sm-5 text-autovity">Why to choose Autovity?</h3>
@@ -76,11 +76,326 @@
       </div>
     </section>
     <!-- Define end -->
+
+    <!-- Acordian tab -->
+    <section class="container-fluid row mt-5 mb-5" id="accordion">
+      <div class="container mb-3 btn-group row">
+        <a class="btn btn-autocolor text-white" data-toggle="collapse" href="#webpack">
+          Web Pack
+        </a>
+        <a class="btn btn-autocolor text-white" data-toggle="collapse" href="#graphicpack">
+          Graphic Pack
+        </a>
+        <a class="btn btn-autocolor text-white" data-toggle="collapse" href="#videopack">
+          Video Pack
+        </a>
+      </div>
+      <div id="webpack" class="mx-auto container collapse show" data-parent="#accordion">
+        <div>
+          <h3 class="text-autovity">Web Pack</h3>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia odit eligendi aspernatur nisi aliquid 
+            veniam perferendis, natus illo delectus quibusdam, sapiente aliquam, 
+            distinctio doloribus placeat sed! Rem, quis ea.
+          </p>
+        </div>
+        <div class="row card-deck">
+        <!-- Basic Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+              <h6 class="card-price text-center">Rs.10000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Plus Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+              <h6 class="card-price text-center">Rs. 15000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Pro Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+              <h6 class="card-price text-center">Rs. 20000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="graphicpack" class="mx-auto container collapse" data-parent="#accordion">
+        <div>
+          <h3 class="text-autovity">Graphic Pack</h3>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia odit eligendi aspernatur nisi aliquid 
+            veniam perferendis, natus illo delectus quibusdam, sapiente aliquam, 
+            distinctio doloribus placeat sed! Rem, quis ea.
+          </p>
+        </div>
+        <div class="row card-deck">
+        <!-- Basic Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+              <h6 class="card-price text-center">Rs.10000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Plus Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+              <h6 class="card-price text-center">Rs. 15000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Pro Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+              <h6 class="card-price text-center">Rs. 15000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="videopack" class="mx-auto container collapse" data-parent="#accordion">
+        <div>
+          <h3 class="text-autovity">Video Pack</h3>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia odit eligendi aspernatur nisi aliquid 
+            veniam perferendis, natus illo delectus quibusdam, sapiente aliquam, 
+            distinctio doloribus placeat sed! Rem, quis ea.
+          </p>
+        </div>
+        <div class="row card-deck">
+        <!-- Basic Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+              <h6 class="card-price text-center">Rs.10000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Plus Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+              <h6 class="card-price text-center">Rs. 15000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        <!-- Pro Tier -->
+          <div class="card col-md">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+              <h6 class="card-price text-center">Rs. 15000</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-block btn-autocolor text-uppercase text-white">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+   
     
     <!-- Footer -->
-    <footer>
+    <!-- Footer -->
+<footer class="text-white bg-blue pt-4">
 
-    </footer>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p class="text-dark">Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Navigate</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Home</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Our Team</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">About us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Social Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark"><i class="fab fa-facebook">&nbsp;Facebook</i></a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="fab fa-instagram">&nbsp;Instagram</i></a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="fab fa-twitter">&nbsp;Twitter</i></a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="fab fa-youtube">&nbsp;Youtube</i></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center bg-darkbluies py-3">
+    Copyright &copy; Autovity Tech Group | 2020
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
     <!-- Footer end -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
