@@ -105,3 +105,13 @@ section.pricing {
       opacity: 1;
     }
   }
+/* 
+  .minheight{
+    min-height: 80vh;
+  } */
+
+  #teamsvg img{
+    max-height: 300px;
+    max-width: auto;
+  }
+ 
